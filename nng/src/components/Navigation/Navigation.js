@@ -17,12 +17,15 @@ class Navigation extends Component {
       {/* <Nav.Link href="#features">Features</Nav.Link>
       <Nav.Link href="#pricing">Pricing</Nav.Link> */}
       <Link to="/about" className="nav-link">About</Link>
+      <Link to="/game" className="nav-link">Games</Link>
     </Nav>
     <Nav>
-      <Nav.Link href="#deets">More deets</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
+      <Link to="/news" className="nav-link">News</Link>
+      <Link to="/contact" className="nav-link">Contact</Link>
+      {/* <Nav.Link href="#deets">More deets</Nav.Link> */}
+      {/* <Nav.Link eventKey={2} href="#memes">
         Dank memes
-      </Nav.Link>
+      </Nav.Link> */}
     </Nav>
   </Navbar.Collapse>
 </Navbar>
