@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import {Route, Link, Switch, Redirect} from "react-router-dom";
 import Home from '../Home/Home'
+import About from '../About/About'
 import Navigation from '../Navigation/Navigation'
 
 class App extends Component {
@@ -9,8 +10,9 @@ class App extends Component {
     return (
       <div>
          <Navigation></Navigation>
-         TEST
+         {/* <Route path="/" exact component={Home}/> */}
          <Route path="/" exact component={Home}/>
+         <Route path="/about" exact component={About}/>
       </div>
     )
   }
