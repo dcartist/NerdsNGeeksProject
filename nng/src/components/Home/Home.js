@@ -4,10 +4,15 @@ class Home extends Component {
     render() {
         return (
             <div>
-                THIS IS HOME PAGE
+                TESTING
+                
+              
             </div>
         );
     }
 }
 
 export default Home;
+
+
+
