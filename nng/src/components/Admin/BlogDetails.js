@@ -77,13 +77,6 @@ class BlogDetails extends Component {
             console.log(err)
         })
 
-        // axios({
-        //     method: 'DELETE',
-        //     url: 'http://localhost:3000/posts/1',
-        //     headers: { 'Content-Type': 'application/json' },
-        //   });
-
-        // Axios.delete(blogid).then(element => {console.log(blogid)}).catch(err=>{console.log(err)})
         this.goBack()
     }
        
