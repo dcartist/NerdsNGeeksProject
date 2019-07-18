@@ -1,3 +1,4 @@
+// Admin blog
 import React, { Component } from 'react';
 import Axios from 'axios';
 import {Route, Link, Switch, Redirect} from "react-router-dom";
@@ -27,8 +28,12 @@ class BlogListing extends Component {
             index++
                 console.log(item)
             return(<div key={index}>
+
                 <p>{item.title}</p>
+                {/* <Link to={"/blog/info/" + jobItems._id}>{jobItems._id}</Link> */}
+                <Link to={"/blog/info/" + item._id}>{item._id}</Link>
                 <p> {item.body}</p>
+
             </div>)
             
         })

@@ -18,6 +18,8 @@ class Navigation extends Component {
       <Nav.Link href="#pricing">Pricing</Nav.Link> */}
       <Link to="/about" className="nav-link">About</Link>
       <Link to="/game" className="nav-link">Games</Link>
+      <Link to="/blog" className="nav-link">Updates</Link>
+      <Link to="/admin" className="nav-link">Admin</Link>
     </Nav>
     <Nav>
       <Link to="/news" className="nav-link">News</Link>
