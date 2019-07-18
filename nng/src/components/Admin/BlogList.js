@@ -8,6 +8,7 @@ class BlogListing extends Component {
         super(props)
         this.state = {
             results: [],
+            _id: null,
         }
     }
 
@@ -22,6 +23,10 @@ class BlogListing extends Component {
             }
         )
     }
+    
+
+   
+
     render() {
         let index = 0
         let blogList = this.state.results.map(item => {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-import Update from './BlogUpdate'
+
 
 class BlogDetails extends Component {
     constructor(props){
@@ -32,6 +32,10 @@ class BlogDetails extends Component {
           })
     }
 
+    goBack = () => {
+        this.props.history.push("/admin")
+        // not a hard direct
+      }
 
     handleDate(evt){
         evt.preventDefault();
@@ -55,6 +59,35 @@ class BlogDetails extends Component {
         title: evt.target.value
     })
     }
+    handleDeleteSubmit(evt){
+        evt.preventDefault();
+        const blogid = this.props.match.params._id;
+        let delId = `http://localhost:8080/api/blog/delete/`+blogid
+        console.log(delId)
+        Axios(
+            {
+                method: 'delete',
+                url: `${delId}`,
+                // data: null,
+                headers: {'Content-Type': 'application/json'},
+                }
+        ).then(item=>{
+            console.log(item)
+        }).catch(err=>{
+            console.log(err)
+        })
+
+        // axios({
+        //     method: 'DELETE',
+        //     url: 'http://localhost:3000/posts/1',
+        //     headers: { 'Content-Type': 'application/json' },
+        //   });
+
+        // Axios.delete(blogid).then(element => {console.log(blogid)}).catch(err=>{console.log(err)})
+        this.goBack()
+    }
+       
+        
 
     handleSubmit(evt){
         // const url = `https://whispering-bayou-30290.herokuapp.com/api/contractor/new`;
@@ -71,18 +104,16 @@ class BlogDetails extends Component {
         // const input = {tweet: {body:  this.state.value}};
         Axios.put(updateID,
         {
+            
             title: this.state.title,
             body: this.state.body,
             date: this.state.date,
         })}
 
-        goBack = () => {
-            this.props.history.push("/admin")
-            // not a hard direct
-          }
 
     render() {
         let newDate = new Date();
+        
         return (
             <div>
                 <p>{this.state.title}</p>
@@ -110,9 +141,9 @@ class BlogDetails extends Component {
                     
                 <input name="" type="submit" />
                 </p>
-
-
-
+                </form>
+                <form onSubmit={(evt) => this.handleDeleteSubmit(evt)}>
+                <input name="Delete" type="submit" value="delete"/>
                 </form>
                 </div>
             </div>
