@@ -20,6 +20,7 @@ class Navigation extends Component {
       <Link to="/game" className="nav-link">Games</Link>
       <Link to="/blog" className="nav-link">Updates</Link>
       <Link to="/admin" className="nav-link">Admin</Link>
+      <Link to="/status" className="nav-link">Status</Link>
     </Nav>
     <Nav>
       <Link to="/news" className="nav-link">News</Link>
