@@ -62,14 +62,17 @@ class Status extends Component {
             )  
         }
         theEnd = ()=> {
-            if (this.state.counter == 8){
+            console.log('the End Firing')
+            if (this.state.counter > 8){
                 // this.props.history.push("/admin")
+
                 return(
-                    <Redirect to={{
-                        pathname: '/status/results/',
-                        state: { nerdPercentage: this.state.nerdPercentage }
-                    }}/>
+                    // <Redirect to={{
+                    //     pathname: '/status/results/'+this.state.nerdPercentage,
+                    //     state: { nerdPercentage: this.state.nerdPercentage }
+                    // }}/>
                     // <Link to={"/status/results/" + this.state.nerdPercentage}>{item._id}</Link>
+                    this.props.history.push('/status/results/'+this.state.nerdPercentage)
                 )
             } else {
                 this.quiz(this.state.counter)
@@ -101,6 +104,7 @@ class Status extends Component {
 
           });
         //   this.quiz(this.state.counter)
+    
         
     }
 
@@ -109,7 +113,6 @@ class Status extends Component {
             display: 'grid',
             gridTemplateColumns: 'repeat(3,1fr)',
         }
-        console.log(this.state.questionsOutside)
         return (
             <div>
                 

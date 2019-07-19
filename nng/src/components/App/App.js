@@ -41,7 +41,7 @@ class App extends Component {
          <Route path="/admin" exact component={Admin}/>
          <Route path="/blog/info" exact component={Bloginfo}/>
          <Route path="/blog/info/:_id" render={(props)=> <Bloginfo setBlogInfo={this._id} {...props} {...this.state} />} />
-         <Route path="/status/results/" render={(props)=> <Statusinfo setStatusInfo={this.nerdPercentage} {...props} {...this.state} />} />
+         <Route path="/status/results/:nerdPercentage" render={(props)=> <Statusinfo setStatusInfo={this.nerdPercentage} {...props} {...this.state} />} />
           {/* <Particle className="boxedIn"></Particle> */}
       </div>
     )

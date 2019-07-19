@@ -44,15 +44,18 @@ section{
     font-weight: 600;
     text-decoration: none;
     font-size: 13px;
-    color: #A7AAAE;
+    color: rgb(7, 7, 7);
     position: absolute;
     left: 50%;
     bottom: 50%;
-    border: 1px solid #A7AAAE;
-    padding: 12px 20px 10px;
+    background-color: rgb(245, 241, 0);
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    padding: 50px 50px 50px;
     border-radius: 50px;
     transition: all .1s ease-in-out;
     text-transform: uppercase;
+    
   }
 
 
