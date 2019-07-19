@@ -25,8 +25,6 @@ class BlogListing extends Component {
     }
     
 
-   
-
     render() {
         let index = 0
         let blogList = this.state.results.map(item => {

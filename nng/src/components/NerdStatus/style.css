@@ -7,4 +7,57 @@
 
 section{
     width: 400px;
+    padding: 10px;
+
 }
+
+.fullBody{
+    /* height: 500px; */
+    position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/* .aboveLink {
+    line-height: normal;
+    font-family: Varela Round, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 13px;
+    color: #A7AAAE;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    border: 1px solid #A7AAAE;
+    padding: 12px 20px 10px;
+    border-radius: 50px;
+    transition: all .1s ease-in-out;
+    text-transform: uppercase;
+  } */
+.aboveLink {
+    line-height: normal;
+    font-family: Varela Round, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 13px;
+    color: #A7AAAE;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border: 1px solid #A7AAAE;
+    padding: 12px 20px 10px;
+    border-radius: 50px;
+    transition: all .1s ease-in-out;
+    text-transform: uppercase;
+  }
+
+
+  
+  a.iprodev:hover {
+    background: #A7AAAE;
+    color: white;
+  }

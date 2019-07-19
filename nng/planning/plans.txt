@@ -23,5 +23,15 @@ Indian Jones or Steve Irwin?
 Aliens guy or Neil Degrasse Tyson?
 Talking in Klingon or Talking in French?
 Rick and Morty or Adam Savage and Jamie Hyneman?
-Tron or Matrix?
+Tron or ?
 U.A. High School (Hero Academia) or Harvard Univ?
+Pikachu or Mu?
+
+
+Quiz:
+Load question[0]
+on click, adjust value, change question to question[1] >> if question[9]>> redirect to final results
+with confetti
+
+
+
