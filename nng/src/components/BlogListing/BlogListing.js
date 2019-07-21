@@ -11,7 +11,8 @@ class BlogListing extends Component {
     }
 
     componentDidMount(){
-        const url = 'http://localhost:8080/api/blog/'
+        // const url = 'http://localhost:8080/api/blog/'
+        const url = 'https://desolate-tundra-14936.herokuapp.com/api/blog/'
         Axios.get(url).then(
             res => {
                 console.log(res.data[0])

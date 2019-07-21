@@ -18,7 +18,8 @@ class BlogDetails extends Component {
         let blogid = this.props.match.params._id;
 
         console.log(blogid)
-        const url = `http://localhost:8080/api/blog/id/`+blogid;
+        // const url = `http://localhost:8080/api/blog/id/`+blogid;
+        const url = `http://desolate-tundra-14936.herokuapp.com/api/blog/id/`+blogid;
         Axios
           .get(url)
           .then(response => {
@@ -62,7 +63,8 @@ class BlogDetails extends Component {
     handleDeleteSubmit(evt){
         evt.preventDefault();
         const blogid = this.props.match.params._id;
-        let delId = `http://localhost:8080/api/blog/delete/`+blogid
+        let delId = `http://desolate-tundra-14936.herokuapp.com/api/blog/delete/`+blogid
+        // let delId = `http://localhost:8080/api/blog/delete/`+blogid
         console.log(delId)
         Axios(
             {
@@ -93,7 +95,8 @@ class BlogDetails extends Component {
         console.log(this.state.date)
         const blogid = this.props.match.params._id;
         // let updateID = `http://localhost:8080/api/blog/update/5d2f680606f1be154ad0a2b1`
-        let updateID = `http://localhost:8080/api/blog/update/`+blogid
+        let updateID = `http://desolate-tundra-14936.herokuapp.com/api/blog/update/`+blogid
+        // let updateID = `http://localhost:8080/api/blog/update/`+blogid
         // const input = {tweet: {body:  this.state.value}};
         Axios.put(updateID,
         {

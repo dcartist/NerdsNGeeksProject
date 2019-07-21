@@ -46,8 +46,8 @@ class BlogNew extends Component {
         console.log(this.state.body)
         console.log(this.state.date)
     
-        // let updateID = `http://localhost:8080/api/blog/update/5d2f680606f1be154ad0a2b1`
-        let url = `http://localhost:8080/api/blog/new/`
+        // let url = `http://localhost:8080/api/blog/new/`
+        let url = `http://desolate-tundra-14936.herokuapp.com/api/blog/new`
         // const input = {tweet: {body:  this.state.value}};
         Axios.post(url,
         {

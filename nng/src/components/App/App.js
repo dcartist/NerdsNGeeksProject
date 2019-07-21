@@ -3,11 +3,13 @@ import './App.css';
 import {Route, Link, Switch, Redirect} from "react-router-dom";
 import Home from '../Home/Home'
 import About from '../About/About'
+import SEI30 from '../Sei30/Sei30'
 import Blog from '../BlogListing/BlogListing'
 import Status from '../NerdStatus/Status'
 import Navigation from '../Navigation/Navigation'
 import Update from '../Admin/BlogUpdate'
 import Particle from '../Particle/Particle'
+import News from '../News/News'
 import Bloginfo from '../Admin/BlogDetails'
 import Statusinfo from '../NerdStatus/StatusUpdate'
 import Admin from '../Admin/Admin'
@@ -35,8 +37,10 @@ class App extends Component {
          {/* <Route path="/" exact component={Home}/> */}
          <Route path="/" exact component={Home}/>
          <Route path="/about" exact component={About}/>
+         <Route path="/sei30" exact component={SEI30}/>
          <Route path="/status" exact component={Status}/>
          <Route path="/blog" exact component={Blog}/>
+         <Route path="/news" exact component={News}/>
          <Route path="/admin" exact component={Admin}/>
          <Route path="/admin" exact component={Admin}/>
          <Route path="/blog/info" exact component={Bloginfo}/>

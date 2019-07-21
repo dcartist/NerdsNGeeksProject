@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './style.css'
 import { Line, Circle } from 'rc-progress';
 import {Route, Link, Switch, Redirect} from "react-router-dom";
+import Spin from 'react-reveal/Spin';
+
+
 // import * from './Questions.js'
 class Status extends Component {
     constructor(props){
@@ -64,14 +67,9 @@ class Status extends Component {
         theEnd = ()=> {
             console.log('the End Firing')
             if (this.state.counter > 8){
-                // this.props.history.push("/admin")
 
                 return(
-                    // <Redirect to={{
-                    //     pathname: '/status/results/'+this.state.nerdPercentage,
-                    //     state: { nerdPercentage: this.state.nerdPercentage }
-                    // }}/>
-                    // <Link to={"/status/results/" + this.state.nerdPercentage}>{item._id}</Link>
+                 
                     this.props.history.push('/status/results/'+this.state.nerdPercentage)
                 )
             } else {
@@ -118,7 +116,9 @@ class Status extends Component {
                 
         <div style={base}>
                   <section>
-                <Circle percent={this.state.nerdPercentage} strokeWidth="5" trailWidth = "5" strokeColor="purple" trailColor="green">info</Circle>
+                  <Spin spy={this.state.counter}>
+                <Circle className="circle" percent={this.state.nerdPercentage} strokeWidth="10" trailWidth = "7" strokeColor="purple" trailColor="green"></Circle>
+                </Spin>
                 </section>
                 <div> {this.state.mainQuestion} </div>
                 <div>
@@ -128,8 +128,6 @@ class Status extends Component {
           
 
         <div>
-
-            {this.state.nerdScore}
 
                 </div>
                 {/* <div className="nerdSide"><p>NERDS</p></div>
