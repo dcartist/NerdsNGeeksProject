@@ -22,8 +22,6 @@ class News extends Component {
     }
     
     render() {
-        let info = this.state.articles
-        let count = 0
         // console.log(this.articlesListing)
         return (
             <div className="newsGrid">

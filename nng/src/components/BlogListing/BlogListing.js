@@ -15,7 +15,7 @@ class BlogListing extends Component {
         const url = 'https://desolate-tundra-14936.herokuapp.com/api/blog/'
         Axios.get(url).then(
             res => {
-   
+
                 let blogResults = res.data
                 this.setState({results: blogResults})
             }

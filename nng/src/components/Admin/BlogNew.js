@@ -15,9 +15,7 @@ class BlogNew extends Component {
 
     handleDate(evt){
         evt.preventDefault();
-        let newDate = new Date();
     this.setState({
-        // date: 'Some Date in the time space continuum'
         date: evt.target.value
     })
     }
@@ -57,15 +55,12 @@ class BlogNew extends Component {
         })}
 
     render() {
-        let newDate = new Date();
         return (
             <div>
 
                 <h3>Create New Blog</h3>
 
                 <form onSubmit={(evt) => this.handleSubmit(evt)}>
-                {/* <p><label>Contractor ID: </label>
-                <input type="text" name = "ID" onChange={(evt) => this.handleID(evt)}></input></p> */}
 
                 <p>
                 <label>Title: </label>
@@ -75,13 +70,7 @@ class BlogNew extends Component {
                 <label>Body: </label>
                 <input name="body" type="text" onChange={(evt) => this.handleBody(evt)} />
                 </p>
-                {/* <p>
-                <label>Date: </label>
-                <input name="date" type="text" onChange={(evt) => this.handleDate(evt)} value={newDate}/>
-        
-                </p> */}
                 <p> 
-                    
                 <input name="" type="submit" />
                 </p>
 

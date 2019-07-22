@@ -40,9 +40,7 @@ class BlogDetails extends Component {
 
     handleDate(evt){
         evt.preventDefault();
-        // let newDate = new Date();
     this.setState({
-        // date: 'Some Date in the time space continuum'
         date: evt.target.value
     })
     }
@@ -96,8 +94,6 @@ class BlogDetails extends Component {
         const blogid = this.props.match.params._id;
         // let updateID = `http://localhost:8080/api/blog/update/5d2f680606f1be154ad0a2b1`
         let updateID = `http://desolate-tundra-14936.herokuapp.com/api/blog/update/`+blogid
-        // let updateID = `http://localhost:8080/api/blog/update/`+blogid
-        // const input = {tweet: {body:  this.state.value}};
         Axios.put(updateID,
         {
             
@@ -108,9 +104,7 @@ class BlogDetails extends Component {
 
 
     render() {
-        let newDate = new Date();
-        
-        return (
+      return (
             <div>
                 <p>{this.state.title}</p>
                 <p>{this.state.body}</p>
@@ -130,8 +124,6 @@ class BlogDetails extends Component {
                 <input name="body" type="text" onChange={(evt) => this.handleBody(evt)} />
                 </p>
                 <p>
-                {/* <label>Date: </label> */}
-                {/* <input name="date" type="text" onChange={(evt) => this.handleDate(evt)} value={newDate}/> */}
                 </p>
                 <p> 
                     
