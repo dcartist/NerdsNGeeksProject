@@ -1,8 +1,5 @@
 ## NERDS N GEEKS
 
-First of all this project is dedicated to my friend John who passed during the making of this project. :-( My Manager, friend and so much more.
-
-![john](/nng/SANY0053.JPG)
 **Libraries used:** 
 
 - react
@@ -85,3 +82,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
+
+This project is dedicated to my friend John who passed during the making of this project. :-( My Manager, friend and so much more.
+
+![john](/nng/SANY0053.JPG)
