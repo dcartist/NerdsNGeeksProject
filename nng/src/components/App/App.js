@@ -3,6 +3,7 @@ import './App.css';
 import {Route, Link, Switch, Redirect} from "react-router-dom";
 import Home from '../Home/Home'
 import About from '../About/About'
+import ImageGallery from '../Sei30/ImageGallery'
 import SEI30 from '../Sei30/Sei30'
 import Blog from '../BlogListing/BlogListing'
 import Status from '../NerdStatus/Status'
@@ -39,6 +40,7 @@ class App extends Component {
          <Route path="/" exact component={Home}/>
          <Route path="/about" exact component={About}/>
          <Route path="/sei30" exact component={SEI30}/>
+         <Route path="/sei30/images" exact component={ImageGallery}/>
          <Route path="/status" exact component={Status}/>
          <Route path="/nerdsgeeks" exact component={Definitions}/>
          <Route path="/blog" exact component={Blog}/>

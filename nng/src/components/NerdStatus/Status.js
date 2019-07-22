@@ -29,28 +29,50 @@ class Status extends Component {
             mainQuestion:'Which Doctor do you Prefer',
             nerdButton:'Dr. Strange',
             geekButton:'Dr. Who',
+            nerdImage:'http://www.artscrazy.com/sei30/nng/strange.jpg',
+            geekImage:'http://www.artscrazy.com/sei30/nng/who.jpg',
             counter: 0,
             infoButton: [
                 {geek: 'Dr. Strange',  
-                nerd: 'Dr. Who',},
+                nerd: 'Dr. Who',
+                geeksrc: 'http://www.artscrazy.com/sei30/nng/strange.jpg',
+                nerdsrc: 'http://www.artscrazy.com/sei30/nng/who.jpg',},
                 {geek: 'Guardians of the Galaxy',  
-                nerd: 'Hitchhiker`s guide to the galaxy',},
+                nerd: 'Hitchhiker`s guide to the galaxy',
+                geeksrc:'http://www.artscrazy.com/sei30/nng/guardians.jpg', 
+                nerdsrc:'http://www.artscrazy.com/sei30/nng/hitchhiker.jpg',},
                 {geek: 'Star Wars',  
-                nerd: 'Star Trek',},
+                nerd: 'Star Trek',
+                geeksrc: 'http://www.artscrazy.com/sei30/nng/starwarsmovie.jpg',
+                nerdsrc: 'http://www.artscrazy.com/sei30/nng/startrekmovie.jpg',},
                 {geek: 'Professor Charles Xavier',  
-                nerd: 'Professor Stephen Hawkins',},
+                nerd: 'Professor Stephen Hawkins',
+                geeksrc: 'http://www.artscrazy.com/sei30/nng/xavier.jpg',
+                nerdsrc:'http://www.artscrazy.com/sei30/nng/hawkings.jpg',},
                 {geek: 'Dungeons and Dragons',  
-                nerd: 'Chess',},
+                nerd: 'Chess',
+                geeksrc: 'http://www.artscrazy.com/sei30/nng/dndgame.jpg',
+                nerdsrc:'http://www.artscrazy.com/sei30/nng/chess.jpg',},
                 {geek: 'Tron',      
-                nerd: 'Matrix',},
+                nerd: 'Matrix',
+                geeksrc: 'http://www.artscrazy.com/sei30/nng/tronmovie.jpg',
+                nerdsrc:'http://www.artscrazy.com/sei30/nng/matrixmovie.jpg',},
                 {geek: 'Pikachu',  
-                nerd: 'Mew',},
+                nerd: 'Mewtwo',
+                geeksrc:'http://www.artscrazy.com/sei30/nng/pikachuu.jpg', 
+                nerdsrc: 'http://www.artscrazy.com/sei30/nng/mewto.jpg',},
                 {geek: 'Indiana Jones',  
-                nerd: 'Steve Irwin',},
+                nerd: 'Steve Irwin',
+                geeksrc: 'http://www.artscrazy.com/sei30/nng/jones.jpg',
+                nerdsrc: 'http://www.artscrazy.com/sei30/nng/irwin.jpg',},
                 {geek: 'Aliens guy',  
-                nerd: 'Neil Degrasse Tyson',},
+                nerd: 'Neil Degrasse Tyson',
+                geeksrc: 'http://www.artscrazy.com/sei30/nng/aliens.jpg',
+                nerdsrc: 'http://www.artscrazy.com/sei30/nng/neild.jpg',},
                 {geek: 'Rick and Morty',  
-                nerd: 'Adam Savage and Jamie Hyneman',},
+                nerd: 'Adam Savage and Jamie Hyneman',
+                geeksrc: 'http://www.artscrazy.com/sei30/nng/rick.jpg', 
+                nerdsrc: 'http://www.artscrazy.com/sei30/nng/adam.jpg',},
 
             ]
         }
@@ -61,6 +83,8 @@ class Status extends Component {
                 mainQuestion: this.state.questions[x],
                 geekButton: this.state.infoButton[x].geek,
                 nerdButton: this.state.infoButton[x].nerd,
+                geekImage: this.state.infoButton[x].geeksrc,
+                nerdImage: this.state.infoButton[x].nerdsrc,
             })
             )  
         }
@@ -122,8 +146,12 @@ class Status extends Component {
                 </section>
                 <div> {this.state.mainQuestion} </div>
                 <div>
-                <div><button onClick={this.geekIncrease}>{this.state.geekButton}</button></div>
-          <div><button onClick={this.nerdIncrease}>{this.state.nerdButton}</button></div>
+                <div>
+                    <img src={this.state.geekButton}></img>
+                    <button onClick={this.geekIncrease}>{this.state.geekButton}</button></div>
+          <div>
+          <img src={this.state.nerdButton}></img>
+              <button onClick={this.nerdIncrease}>{this.state.nerdButton}</button></div>
                 </div>
           
 
