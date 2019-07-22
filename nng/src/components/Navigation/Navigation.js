@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "./Navigation.css";
 import { Link } from "react-router-dom";
+import SmileShades from './image/smiley-20-32.png'
+import SmileSide from './image/smiley-8-32.png'
 
 
 class Navigation extends Component {
@@ -19,12 +21,14 @@ class Navigation extends Component {
       <Link to="/about" className="nav-link">About</Link>
       <Link to="/game" className="nav-link">Games</Link>
       <Link to="/blog" className="nav-link">Updates</Link>
-      <Link to="/admin" className="nav-link">Admin</Link>
       <Link to="/status" className="nav-link">Status</Link>
+      <Link to="/news" className="nav-link">News</Link>
     </Nav>
     <Nav>
-      <Link to="/news" className="nav-link">News</Link>
-      <Link to="/contact" className="nav-link">Contact</Link>
+      <Link to="/admin" className="nav-link">Admin</Link>
+      <Link to="/sei30"><img src={SmileShades}></img></Link>
+      <Link to="/easteregg"><img src={SmileSide}></img></Link>
+      {/* <Link to="/contact" className="nav-link">Contact</Link> */}
       {/* <Nav.Link href="#deets">More deets</Nav.Link> */}
       {/* <Nav.Link eventKey={2} href="#memes">
         Dank memes

@@ -9,3 +9,16 @@
     height: 400px;
 
 }
+
+img{
+    width: 75%;
+}
+
+.redBackground{
+    background-color: #ed1925;
+}
+
+.displayed{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}

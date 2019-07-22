@@ -27,11 +27,11 @@ class Status extends Component {
             nerdPercentage:50,
             rating: 0,
             mainQuestion:'Which Doctor do you Prefer',
-            nerdButton:'Dr. Strange',
-            geekButton:'Dr. Who',
-            nerdImage:'http://www.artscrazy.com/sei30/nng/strange.jpg',
-            geekImage:'http://www.artscrazy.com/sei30/nng/who.jpg',
-            counter: 0,
+            nerdButton:'Dr. Who',
+            geekButton:'Dr. Strange',
+            geekImage:'http://www.artscrazy.com/sei30/nng/strange.jpg',
+            nerdImage:'http://www.artscrazy.com/sei30/nng/who.jpg',
+            counter: 1,
             infoButton: [
                 {geek: 'Dr. Strange',  
                 nerd: 'Dr. Who',
@@ -131,35 +131,28 @@ class Status extends Component {
     }
 
     render(){
-        let base = {
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3,1fr)',
-        }
+        
         return (
             <div>
                 
-        <div style={base}>
+                <div> <h1>{this.state.mainQuestion}</h1> </div>
+        <div className="base">
                   <section>
                   <Spin spy={this.state.counter}>
                 <Circle className="circle" percent={this.state.nerdPercentage} strokeWidth="10" trailWidth = "7" strokeColor="purple" trailColor="green"></Circle>
                 </Spin>
                 </section>
-                <div> {this.state.mainQuestion} </div>
-                <div>
-                <div>
-                    <img src={this.state.geekButton}></img>
-                    <button onClick={this.geekIncrease}>{this.state.geekButton}</button></div>
-          <div>
-          <img src={this.state.nerdButton}></img>
-              <button onClick={this.nerdIncrease}>{this.state.nerdButton}</button></div>
-                </div>
-          
+                <div className="quizChoices">
+                    <img src={this.state.geekImage}></img><br></br>
+                    <button className="Nerd" onClick={this.geekIncrease}>{this.state.geekButton}</button></div>
 
-        <div>
 
+          <div className="quizChoices">
+          <img src={this.state.nerdImage}></img><br></br>
+              <button className="Geek" onClick={this.nerdIncrease}>{this.state.nerdButton}</button>
+            
                 </div>
-                {/* <div className="nerdSide"><p>NERDS</p></div>
-                <div className="geekSide"><p>GEEKS</p></div> */}
+                
                
                 
             </div>

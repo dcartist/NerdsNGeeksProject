@@ -29,10 +29,10 @@ constructor(props){
         return (
             <div className="fullBody">
                 <ConfettiCanvas />
-<div className="aboveLink">Congrats
-<p>You got {this.state.results}</p>
-<button onClick={this.goBack}> GO home</button>
-<a href="/"> Go HOME</a>
+<div className="aboveLink">
+<h1>Congrats</h1>
+<p>You are {this.state.results}% NERD and {100-this.state.results}% GEEK</p> 
+<a href="/"><button>Go HOME</button></a>
 </div> 
           
             </div>
