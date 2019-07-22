@@ -19,8 +19,32 @@ section{
   height: 100%;
   width: 100%;
 }
+.gridNG{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 0px;
+  /* padding: 20px; */
+  
+}
 
-
+.Nerd{
+  background-color:rgb(144, 63, 168);
+  padding: 20px;
+}
+.Geek{
+  padding: 20px;
+  background-color:rgb(47, 243, 96);
+}
+.main{
+  padding: 20px;
+  width: 100%;
+  margin: 0px;
+}
+h1 {
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 60px;
+}
 
 /* .aboveLink {
     line-height: normal;

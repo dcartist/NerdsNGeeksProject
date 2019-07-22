@@ -1,0 +1,11 @@
+.imageGallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.imageGallery img {
+    width: 100%;
+    overflow: hidden;
+    height: 400px;
+
+}

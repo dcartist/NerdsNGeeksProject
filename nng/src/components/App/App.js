@@ -11,6 +11,7 @@ import Update from '../Admin/BlogUpdate'
 import Particle from '../Particle/Particle'
 import News from '../News/News'
 import Bloginfo from '../Admin/BlogDetails'
+import Definitions from '../NerdStatus/DefineNG'
 import Statusinfo from '../NerdStatus/StatusUpdate'
 import Admin from '../Admin/Admin'
 
@@ -39,6 +40,7 @@ class App extends Component {
          <Route path="/about" exact component={About}/>
          <Route path="/sei30" exact component={SEI30}/>
          <Route path="/status" exact component={Status}/>
+         <Route path="/nerdsgeeks" exact component={Definitions}/>
          <Route path="/blog" exact component={Blog}/>
          <Route path="/news" exact component={News}/>
          <Route path="/admin" exact component={Admin}/>
