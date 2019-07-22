@@ -1,9 +1,15 @@
 div.card {
     /* width: 300px; */
-    width: 80%;
+    width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
+    padding: 5px;
     margin-bottom: 5px;
+  }
+
+  .card button{
+    background-color: black;
+    color: white;
+    padding: 10px;
   }
 
   div.header {
@@ -11,6 +17,7 @@ div.card {
     color: white;
     padding: 10px;
     font-size: 40px;
+    text-align: center;
   }
   
   div.container {

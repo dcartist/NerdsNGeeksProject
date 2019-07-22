@@ -10,6 +10,24 @@
 
 }
 
+.largeButton{
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+section h2{
+    width: 60px;
+    color: white;
+}
+
+section p{
+    color: white;
+    font-size: 25px;
+}
 img{
     width: 75%;
 }
@@ -21,4 +39,9 @@ img{
 .displayed{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+}
+
+.seiVideos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)
 }

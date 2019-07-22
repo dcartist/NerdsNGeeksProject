@@ -29,11 +29,26 @@ section{
   padding: 20px;
   /* margin: auto; */
 }
+
+.ngHeader{
+  width: 100%;
+  background-color: rgb(94, 150, 255);
+  text-align: center;
+}
+
+.ngHeader button{
+  width:200px;
+  height: 70px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  font-size: 19px;
+}
 .gridNG{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  margin: 0px;
+  margin: 0;
+  padding: 0; 
   /* padding: 20px; */
   
 }
@@ -70,6 +85,11 @@ section{
 .Geek{
   padding: 20px;
   background-color:rgb(47, 243, 96);
+}
+.mainNG{
+margin:0;
+padding: 0;
+
 }
 .main{
   padding: 20px;
@@ -117,6 +137,11 @@ h1 {
     text-transform: uppercase;
     
   }
+.leftSide li{
+  text-align: left;
+  list-style-type: none;
+  text-transform: uppercase;
+}
 .easterEgg{
   display: grid;
   background-color: black;

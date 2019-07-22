@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
+import RubberBand from 'react-reveal/RubberBand';
 import {Route, Link, Switch, Redirect} from "react-router-dom";
-
+import './blogListing.css'
 class BlogListing extends Component {
     constructor(props){
         super(props)
@@ -27,18 +28,23 @@ class BlogListing extends Component {
         let blogList = this.state.results.map(item => {
             index++
                 console.log(item)
-            return(<div key={index}>
-                <p>{item.title}</p>
+            return(<div key={index} className="blog">
+                <h3>{item.title}</h3>
                 <p> {item.body}</p>
+                <small>{item.date}</small>
             </div>)
             
         })
 
         return (
             <div>
+                <RubberBand>
             <h1>Message from your ultimate glorious leader</h1>
+        </RubberBand>
+            <div className="blogMain">
 
             {blogList}
+            </div>
             </div>
         );
     }

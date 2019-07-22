@@ -32,6 +32,7 @@ class News extends Component {
                 <img src={item.urlToImage}></img>
                  <p> <b>{item.title}</b></p>
              <p>{item.description}</p>
+             <a href={item.url} target="blank"><button>Click for more information</button></a>
              </div>
                     
                 )}

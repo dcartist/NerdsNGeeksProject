@@ -2,11 +2,20 @@ import React, { Component } from 'react';
 import RubberBand from 'react-reveal/RubberBand';
 import './style.css'
 import Card from 'react-bootstrap/Card';
+import { Link } from "react-router-dom";
 
 class DefineNG extends Component {
     render() {
         return (
-            <div className="main">
+            <div className="mainNG">
+                <section className="ngHeader">
+                    <h1>Find out your percentage of Nerdy - Geeky ways</h1>
+                    <Link to="/status">
+                    <button>Nerd vs Geek</button>
+                    </Link>
+                </section>
+
+
                  <section className="gridNG">
                 <div className="Nerd">
                     <RubberBand>
@@ -20,6 +29,18 @@ class DefineNG extends Component {
         <p>A studious intellectual, although again of a particular topic or field. Nerds are “achievement” oriented, and focus their efforts on acquiring knowledge and skill over trivia and memorabilia.</p>
             </Card.Body>
         </Card>
+        <Card>
+        <Card.Body>
+        <ul className="leftSide">
+            <li>intellectual</li>
+            <li>Most likely to enjoy educational lectures</li>
+            <li>Can be quirky</li>
+            <li></li>
+        </ul>
+            </Card.Body>
+        </Card>
+        
+       
 
         </div>
                 
@@ -32,9 +53,16 @@ class DefineNG extends Component {
 
             </Card.Body>
         </Card>
-        <ul>
-
+        <Card>
+        <Card.Body>
+        <ul className="leftSide">
+            <li>Interest in Pop culture</li>
+            <li>Can be quirky</li>
+            <li>Most likely have collections of popular items from movies or books</li>
+            <li></li>
         </ul>
+            </Card.Body>
+        </Card>
         
         </div>
             </section>
