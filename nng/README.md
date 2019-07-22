@@ -1,4 +1,23 @@
+## NERDS N GEEKS
+
+First of all this project is dedicated to my friend John who passed during the making of this project.
+
+
+
+**Libraries used:** 
+
+- react
+- react-dom
+- Node.js
+- react-bootstrap
+- rc-progress
+- react reveal
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 
 ## Available Scripts
 
@@ -66,3 +85,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
