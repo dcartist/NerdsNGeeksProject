@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import RubberBand from 'react-reveal/RubberBand';
-import {Route, Link, Switch, Redirect} from "react-router-dom";
 import './blogListing.css'
 class BlogListing extends Component {
     constructor(props){
@@ -16,10 +15,9 @@ class BlogListing extends Component {
         const url = 'https://desolate-tundra-14936.herokuapp.com/api/blog/'
         Axios.get(url).then(
             res => {
-                console.log(res.data[0])
+   
                 let blogResults = res.data
                 this.setState({results: blogResults})
-                console.log(this.state.results)
             }
         )
     }
@@ -27,7 +25,6 @@ class BlogListing extends Component {
         let index = 0
         let blogList = this.state.results.map(item => {
             index++
-                console.log(item)
             return(<div key={index} className="blog">
                 <h3>{item.title}</h3>
                 <p> {item.body}</p>
